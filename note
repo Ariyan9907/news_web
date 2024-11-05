@@ -1,0 +1,40 @@
+function generateBotResponse(userInput) {
+    const lowerInput = userInput.toLowerCase();
+
+    if (lowerInput.includes("hello") || lowerInput.includes("hi")) {
+        return "Hello! How can I help you today?";
+    } else if (lowerInput.includes("how to search for news")) {
+        return "Just type the topic you are interested in the search bar and press Enter or click the search icon.";
+    } else if (lowerInput.includes("what topics can i search for")) {
+        return "You can search for topics like Technology, Business, Sports, Politics, Entertainment, and Events.";
+    } else if (lowerInput.includes("can i leave feedback")) {
+        return "Yes, you can leave feedback by visiting the 'Feedback' section in the menu.";
+    } else if (lowerInput.includes("what is today's news")) {
+        return "You can check today's headlines on our homepage or by searching for 'Today's news' in the search bar.";
+    } else if (lowerInput.includes("latest technology news")) {
+        return "You can find the latest technology news by searching for 'Technology' or visiting the Technology section.";
+    } else if (lowerInput.includes("business news")) {
+        return "To get the latest business news, search for 'Business' or visit the Business section from the menu.";
+    } else if (lowerInput.includes("how to use menu")) {
+        return "Click on the menu icon (three bars) to open the navigation. From there, you can select different news categories.";
+    } else if (lowerInput.includes("what is in the sidebar menu")) {
+        return "The sidebar menu contains links to Technology, Business, Entertainment, Events, Sports, Politics, and Feedback sections.";
+    } else if (lowerInput.includes("how to close menu")) {
+        return "Click on the 'X' icon in the top-right corner of the sidebar menu to close it.";
+    } else if (lowerInput.includes("who created this website")) {
+        return "This website was created by a group of passionate developers to provide the latest news on various topics.";
+    } else if (lowerInput.includes("what is your purpose")) {
+        return "I am here to assist you with navigating the site, searching for news, and answering any general questions you may have.";
+    } else if (lowerInput.includes("what can you do")) {
+        return "I can help you search for news, guide you through the site's features, and answer general questions.";
+    } else if (lowerInput.includes("tell me a joke")) {
+        return "Why did the computer go to the doctor? Because it had a virus!";
+    } else if (lowerInput.includes("how are you")) {
+        return "I'm just a bot, but thanks for asking! How can I help you today?";
+    } else if (lowerInput.includes("exit") || lowerInput.includes("close")) {
+        return "If you'd like to exit the chat, you can click the robot icon to minimize the chat window. Have a great day!";
+    } else {
+        return "Sorry, I don't understand that. Can you please ask something else?";
+    }
+}
+ 
